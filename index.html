@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="code/script.js"></script>
+    <title>Calcolo codice fiscale</title>
+</head>
+<body>
+    <h1>Calcolo codice fiscale</h1>
+    
+    <label>Inserisci il tuo nome</label><br>
+    <input type="text" placeholder="Nome" id="nome" autofocus><br>
+
+    <label>Inserisci il tuo cognome</label><br>
+    <input type="text" placeholder="Cognome" id="cognome"><br>
+    
+    <label>Inserisci la tua data di nascita</label><br>
+    <input type="date" id="data"><br>
+    
+    <input id="maschio" type="radio" name="sesso" value="maschio" checked> M
+    <input id="femmina" type="radio" name="sesso" value="femmina"> F<br>
+
+    <label>Inserisci il comune di nascita</label><br>
+    <input type="text" id="comune" placeholder="Esempio: ROMA"><br>
+    
+    <label>Carica file codici</label><br>
+    <input type="file" id="fileComuni"><br><br>
+
+    <button onclick="genera()">Genera</button>
+    <div id="risultato"></div>
+</body>
+</html>
